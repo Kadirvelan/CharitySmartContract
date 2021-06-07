@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type,\r",
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC721Full.sol": "Address"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC721Full.sol": {
+			"keccak256": "0xf335fba022c592d6c02b200494208a205e9767903f3f3d80965db44b7b7d5902",
+			"urls": [
+				"bzzr://5c0082e3403ec4bbc8be5fcf161cbc8094b0714194fba6cce5d99aa8bdfaf0cd"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,123 @@
+{
+	"compiler": {
+		"version": "0.4.25+commit.59dbf8f1"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "div",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "result",
+				"outputs": [
+					{
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "sub",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "mul",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/artifacts/arthmetic.sol": "arth"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/artifacts/arthmetic.sol": {
+			"keccak256": "0x2d9983621e68fe01b06ea8bd90f617d74eaf6018fc6d3121bd8ce95855c97381",
+			"urls": [
+				"bzzr://2c822ca9dc1df538fa8ad5c4f8877e78def06aed150758b8c373e646662dd638"
+			]
+		}
+	},
+	"version": 1
+}

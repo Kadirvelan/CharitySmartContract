@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js"></script>
+</head>
+<body>
+    
+    <div class="registration-form">
+        <form>
+            <div style=" display: flex; justify-content: center; font-size: larger; padding-bottom: 20px;">Create Account</div>
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="Address" placeholder="Address">
+                <input type="password" class="form-control item" id="Password" placeholder="Password">
+                <input type="password" class="form-control item" id="Confirm_Password" placeholder="Confirm Password">
+            </div>
+            
+            <div class="form-group">
+                <button type="button" class="btn btn-block create-account" onclick="createAccount()">Create Account</button>
+            </div>
+            
+        </form>
+       
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="contract.js"></script>
+</body>
+</html>
+<script>
+    function createAccount(){
+        var address=document.getElementById("Address").value;
+        var password=document.getElementById("Password").value;
+        var conf_password=document.getElementById("Confirm_Password").value;
+
+        if(password==conf_password){
+
+            //localStorage.setItem("key", "value");
+            //var number = localStorage.getItem("key");
+            Createaccount();            
+        }else{
+            alert("Password doesn't match");
+        }
+
+
+    }
+
+</script>

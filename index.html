@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js"></script>
+</head>
+<body>
+    <div class="container" style="padding-top: 20px; font-size: 20px; color:#5891ff;">
+        <div class="row">
+          <div class="col" >
+            Charity balance: <span id="contract_bal"></span> Ether
+          </div>
+          <div class="col" >
+            Donators: <span id="contract_donors"></span> 
+          </div>
+          <div class="col" >
+            Applicants: <span id="contract_applicants"></span> 
+          </div>
+        </div>
+      </div>
+    <div class="registration-form" id="">
+        <form>
+            <div style=" display: flex; justify-content: center; font-size: larger; padding-bottom: 20px;">User login</div>
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="Address" placeholder="Address">
+                <input type="password" class="form-control item" id="Password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-block create-account" onclick="Loginaccount()">Login</button>
+            </div>
+        </form>
+        <div class="social-media">
+            <h5>Do you wish to Donate/Apply?</h5>
+            <div class="social-icons">
+                <a href="DonateForm.html"><i class="fa fa-dollar" title="Donate"></i></a>
+                <a href="ApplyForm.html"><i class="glyphicon glyphicon-list-alt" title="Google"></i></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="contract.js"></script>
+</body>
+<script>Get_summary()</script>
+</html>
